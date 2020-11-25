@@ -4,6 +4,7 @@ The project is coded using Angular.
 
 **Required**
 + NodeJS, to run the project (link: https://nodejs.org/en/)
++ Git, for cloning this repo (link: https://git-scm.com/downloads)
 
 **Instructions**
 + Clone or fork this repository.
