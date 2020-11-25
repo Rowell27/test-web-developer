@@ -1,0 +1,36 @@
+// side-nav
+.side-nav {
+    .side-header {
+        display: block;
+        position: relative;
+        padding: 1em;
+        background: #e4e2e3;
+        border-radius: 10px;
+        font-weight: bold;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 35px;
+            right: 10px;
+            border-top: 8px solid #e4e2e3;
+            border-bottom: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-left: 8px solid transparent;
+        }
+    }
+
+    ul {
+        padding-left: 1em;
+    }
+
+    li:before {
+        content: "\2022";
+        color: #00a7dd;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        width: .5em;
+        vertical-align: middle;
+    }
+}

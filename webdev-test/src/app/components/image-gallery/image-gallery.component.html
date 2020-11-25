@@ -1,0 +1,10 @@
+<div class="gallery">
+    <span class="col-4 image-wrap" *ngFor="let image of imageList">
+        <img [src]="'../assets/' + image.path" alt="">
+        <div class="content-overlay"></div>
+        <div class="content-details fade-in-bottom">
+            <h3 class="content-title">{{image.heading}}</h3>
+            <div class="content-text">{{image.description}}</div>
+        </div>
+    </span>
+</div>
