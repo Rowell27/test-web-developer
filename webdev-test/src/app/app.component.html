@@ -17,28 +17,10 @@
 </header>
 
 <main class="row container">
-    <aside class="col-3">
-        <div>
-            <h3>SUBNAV</h3>
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-            </ul>
-        </div>
-        <div>
-            <h3>RELATED LINKS</h3>
-            <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
-                <li>Link 3</li>
-            </ul>
-        </div>
-    </aside>
-    <section class="col-9">
-        <div>
-            <h2>HEADING 1</h2>
-            <h3>heading 2</h3>
+    <section class="col-9 col-push-3">
+        <div class="content-heading">
+            <div class="heading">HEADING 1</div>
+            <div class="sub-heading">heading 2</div>
         </div>
         <div>
             <p>
@@ -48,14 +30,37 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis turpis id tortor tincidunt sodales. Praesent rutrum augue eu porttitor congue. Curabitur ullamcorper quis nisl ut tempor. Quisque interdum eu ipsum a tincidunt. Quisque iaculis viverra elit sed hendrerit. Morbi volutpat semper purus quis vestibulum. Curabitur vestibulum metus at neque placerat, quis bibendum libero cursus. Ut vel nunc eget dolor egestas porttitor. Fusce aliquam vitae sapien sit amet porta. Donec tristique ex sed malesuada eleifend.
             </p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis turpis id tortor tincidunt sodales. Praesent rutrum augue eu porttitor congue. Curabitur ullamcorper quis nisl ut tempor. Quisque interdum eu ipsum a tincidunt. Quisque iaculis viverra elit sed hendrerit. Morbi volutpat semper purus quis vestibulum. Curabitur vestibulum metus at neque placerat, quis bibendum libero cursus. Ut vel nunc eget dolor egestas porttitor. Fusce aliquam vitae sapien sit amet porta. Donec tristique ex sed malesuada eleifend.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mattis turpis id tortor tincidunt sodales. Praesent rutrum augue eu porttitor congue. Curabitur ullamcorper quis nisl ut tempor. Quisque interdum eu ipsum a tincidunt. Quisque iaculis viverra elit sed hendrerit. Morbi volutpat semper purus quis vestibulum.
             </p>
         </div>
 
         <div class="gallery">
-            <span *ngFor="let image of imageList">
+            <span class="col-4 image-wrap" *ngFor="let image of imageList">
                 <img [src]="'../assets/' + image.path" alt="">
             </span>
         </div>
     </section>
+    
+    <aside class="side-nav col-3 col-pull-9">
+        <div class="side-group">
+            <span class="side-header">
+                <label>SUBNAV</label>
+            </span>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+        <div class="side-group">
+            <span class="side-header">
+                <label>RELATED LINKS</label>
+            </span>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </div>
+    </aside>
 </main>
